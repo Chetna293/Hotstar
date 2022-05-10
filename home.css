@@ -55,7 +55,7 @@ p{
     margin-left:98px;
 }
 
-h2{
+.fullbox > h2{
     color:white;
     font-size: 20px;
     margin-top:0px;
@@ -257,6 +257,38 @@ li{
     width:107px;
 }
 
+.geo-location > img {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    border-style: none;
+    margin-left:-17px;
+}
+
+.geo-location > p{
+        margin-left:5px;
+        font-size: 10px;
+        height:20px;
+        width:80px;
+        color:black;
+        float:left;
+        border:none;
+
+}
+
+.geo-btn{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    background-color: black;
+    color: white;
+    /* color: var(--secondary-bg-color); */
+    padding: 3px 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin:0 0 0 -10px;
+}
 
 .slideImg{
     height:400px;

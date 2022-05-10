@@ -16,12 +16,14 @@
         </script>
         
         
+        
     </head>
     
     <body>
         
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
+                     
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#edunav">
                             <span class="icon-bar"></span>
@@ -57,6 +59,13 @@
                                 </a></li>
                             </ul>
                             <button type="button" class="mode-btn" onClick="changeMode()">Change Mode</button>
+                            <div class="geo-location">
+                                <img src="https://openweathermap.org/img/w/01d.png">
+                                <button onClick="geolocation()" class="geo-btn">Get Geo</button>
+                                <p id="out">Weather of Nagpur is 38.72°C</p>
+                                <div id="icon"></div>
+                            </div>
+                             
                     </div>
                 </div>
             </nav>
@@ -127,13 +136,6 @@
                 <div class="tray-container">
                     <img src="turningred.png" alt="show" />
                 </div>
-                <div class="tray-container">
-                    <img src="moonknight.png" alt="show" />
-                </div>
-                <div class="tray-container">
-                    <img src="moonknight.png" alt="show" />
-                </div>
-                
             </div>
             <div class="container1">
                 <h2 class="tray-title">
@@ -304,5 +306,40 @@
                     
                 </div>
             </div>
+            <script>
+                let x = document.getElementById('out');
+                function geolocation(){
+                    if(navigator.geolocation){
+                        navigator.geolocation.getCurrentPosition(showPosition)
+                    }else{
+                        x.innerText="Geo Not Supported"
+                    }
+                }
+                
+                // Geo-Location
+
+                function showPosition(data){
+                    console.log(data)
+                    sessionStorage.setItem('data',data)
+                
+                    let latitude = data.coords.latitude;
+                    let longitude = data.coords.longitude
+                    const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
+    
+                    
+                    fetch(url,{method:'GET'})
+                    
+                    .then((res) => res.json())
+                    
+                    .then((data) => {
+                        let cityName = data.city.name
+                        let weather = data.list[0].temp.day
+                        x.innerText = `Weather of ${cityName} is ${weather} °C`
+                        // document.getElementById('icon').appendChild(
+                        //      <img src='https://openweathermap.org/img/w/'+data.list[0].weather.icon+'.png'/>
+                        // )
+                    })
+                }
+            </script>
     </body>
 </html>
