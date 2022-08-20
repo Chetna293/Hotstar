@@ -1,0 +1,41 @@
+db.trendingshows.insert(
+    [
+        {
+            "show_id": 1,
+            "name":"Obi-wan Kenobi",
+            "category_id":1,
+            "Age":"13+",
+            "image":"https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4158/1254158-v-8293462a94f2",
+            "year":2022,
+            "info":"A legendary Jedi Master, Obi-Wan Kenobi was a noble man and gifted in the ways of the Force. He trained Nankins Skywalker, served as a general in the Republic Army during the Clone Wars, and guided Luke Skywalker as a mentor."
+        },
+        {
+            "show_id": 2,
+            "name":"Escaype",
+            "category_id":11,
+            "Age":"13+",
+            "image":"https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9473/1249473-h-b82330364ddc",
+            "year":2022,
+            "info":"Escaype Live is an Indian Hindi-language social thriller web series Created and Directed by Siddharth Kumar Tewary."
+        },
+        {
+            "show_id":3,
+            "name":"Home Shanti",
+            "category_id":2,
+            "age":"7+",
+            "image":"https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9902/1239902-h-f356eb4e9bac",
+            "year":2020,
+            "info":"Home Shanti, a compact comedy on Disney+ Hotstar, burrows into the importance of an owned residence through the experiences of the Joshi family."
+
+        },
+        {
+            "show_id":4,
+            "name":"kaathuvaakula rendu kaadhal",
+            "category_id":52,
+            "age":"13+",
+            "image":"https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/3445/1253445-h-c5fa4a91eaca",
+            "year":2020,
+            "info":" Rambo who lives a double life as a cab driver and bouncer falls in love with two women with contrasting personalities. What happens when he is forced to make a choice?"
+        }
+    ]
+)

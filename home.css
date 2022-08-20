@@ -111,17 +111,6 @@ a{
     margin-top: 3px;
 }
 
-.submenu-container {
-    width: auto;
-    height: auto;
-    max-height: 0;
-    border-radius: 2px;
-    background-color: var(--BG_COLOR_L1);
-    position: absolute;
-    overflow: hidden;
-    display: block;
-}
-
 #icon{
     margin-top:6px;
     margin-left:-2px;
@@ -137,7 +126,6 @@ a{
 }
 
 
-
 ul{
     display: inline-block;
     margin-left:-50px;
@@ -150,9 +138,49 @@ li{
     font-weight: bold;
 }
 
+nav ul{
+    float: left;
+    margin-left: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 0px;
+    line-height: 70px;
+    font-size: 12px;
+    background-color: #141b29;
+    transition: .5s;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    opacity: 0;
+    margin-top: -30px;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 105px;
+    margin-left:-70px;
+  }
+  nav ul ul li a{
+    margin-top: -10px;
+    margin-left:2px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+  }
+
 .search-container input {
     position: relative;
-    width: 140px;
+    width: 170px;
     height: 32px;
     border: none;
     border-bottom: 1px solid gray;
@@ -169,7 +197,7 @@ li{
     -moz-opacity: 1;
     -o-opacity: 1;
     opacity: 1;
-    margin: 19px 0px 0px 160px;
+    margin: 19px 0px 0px 300px;
 }
 
 .searchIcon {
@@ -220,7 +248,7 @@ li{
     position: relative;
     outline: none !important;
     font-size: 12px;
-    margin: -24px 0 15px 310px;
+    margin: -24px 0 15px 490px;
     padding: 0 12px;
     letter-spacing: 0.4px;
     font-weight: 700;
@@ -229,65 +257,60 @@ li{
     border-radius: 4px;
 }
 
-.glyphicon {
-    position: relative;
-    top: -44px;
-    display: inline-block;
-    font-family: "Glyphicons Halflings";
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    right:10px;
+.login ul li a{
+    margin:-45px 0 0 0;
 }
 
-.mode-btn{
-    font-size: 14px;
-    font-weight: 500;
-    color: black;
-    background-color: whitesmoke
-    padding: 15px 18px 15px;
-    border-radius: 3px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 12px;
-    margin: -38px 0 15px 987px;
-    height: 24px;
-    width:107px;
-}
-
-.geo-location > img {
-    height: 30px;
-    width: 30px;
-    vertical-align: middle;
-    border-style: none;
-    margin-left:-17px;
-}
-
-.geo-location > p{
-        margin-left:5px;
-        font-size: 10px;
-        height:20px;
-        width:80px;
-        color:black;
-        float:left;
-        border:none;
-
-}
-
-.geo-btn{
-    font-size: 0.8rem;
-    font-weight: 700;
-    outline: none;
-    background-color: black;
+.geo-location{} {
     color: white;
-    /* color: var(--secondary-bg-color); */
-    padding: 3px 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin:0 0 0 -10px;
+    min-width: 155px;
+   
+    height: 100%;
+   
+    font-size: 13px;
+    padding: 5px;
+}
+
+#img {
+    margin-left: -60px;
+    margin-top:-10px;
+}
+
+#geo-icon {
+   margin-top:-4.2%;
+   margin-left:60%;
+    
+}
+
+.temp-display{
+    margin:0px 0px 0px 0px;
+    color: white;
+   
+}
+
+
+
+#location {
+    margin-top:-3.2%;
+    margin-left:-4%;
+    color: white;
+     
+}
+
+.day-night {
+    position: fixed;
+    z-index: 25;
+    bottom: 80vh;
+    right: 0px;
+    width: 70px;
+    height: 45px;
+    border-top-left-radius: 180px;
+    border-bottom-left-radius: 180px;
+    color: rgb(193, 193, 189);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: black;
 }
 
 .slideImg{
@@ -300,49 +323,49 @@ li{
     width:100% !important
 }
 
-.container {
-    height: 300px;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+.page1{
+    margin-top:10px;
+}
+.page1 h2{
+    color:grey;
+    margin-left:30px;
+    margin-top: 10px;
+}
+.trend{
+    width:97%;
+    object-fit:contain;
+    max-height:200px;
     margin-left:10px;
-    overflow: auto;
+    margin-top:10px;
+    transition: transform 450ms;
+}
+.trend:hover{
+    transform:scale(1.09);
+}
+.Trending{
+    display:flex;
+    overflow-y:hidden;
+    overflow-x:scroll;
+    margin-left:23px;
+}
+#big{
+    height:200px;
 }
 
-.container:hover{
-    transition:scale(1);
+.Trending::-webkit-scrollbar {
+    display:none;
 }
-
+.tray-title{
+    color: grey;
+    font-weight: bold;
+}
 
 div{
     display:block;
 }
 
-.tray-container {
-    height:200px;
-    width:12%;
-    padding-top: 15px;
-    padding-bottom: 45px;
-    max-width: calc(100vw - 100px);
-    margin-left:5px ;
-    position: relative;
-    display: inline-block;
-}
-
-.tray-container > img{
-    height:200px;
-    width:100%;
-    margin-top: -16px;
-    border-radius:10px;
-}
-
-.tray-container:hover{
-    transform:scale(1.1);
-
-}
-
 .container1 {
-    height: 250px;
+    height: 300px;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -407,6 +430,11 @@ div{
     padding: 0 10px 0 0;
 }
 
+.footer-left span {
+    color:grey;
+    
+}
+
 .footer-right {
     height:200px;
     width:485px;
@@ -416,6 +444,16 @@ div{
     height:120px;
     width:150px;
     margin-left: -17px;
+}
+
+.footer-right .social-unit span{
+    color:grey;
+    font-weight: bold;
+}
+
+.footer-right .app-unit h5{
+    color:grey;
+    font-weight: bold;
 }
 
 .slogo{

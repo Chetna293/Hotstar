@@ -1,0 +1,38 @@
+db.movies.insert(
+    [
+        {
+            "sport_id": 1,
+            "sport_name":"Cricket"
+        },
+
+        {
+            "sport_id": 2,
+            "sport_name":"Football"
+        },
+
+        {
+            "sport_id": 3,
+            "sport_name":"Kabaddi"
+        },
+
+        {
+            "sport_id": 4,
+            "sport_name":"Hockey"
+        },
+
+        {
+            "sport_id": 5,
+            "sport_name":"Formula E"
+        },
+
+        {
+            "sport_id": 6,
+            "sport_name":"Khelo India"
+        },
+
+        {
+            "sport_id": 7,
+            "sport_name":"Tennis"
+        }
+    ]
+)

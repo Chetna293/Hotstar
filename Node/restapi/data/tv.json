@@ -1,0 +1,33 @@
+db.tv.insert(
+    [
+        {
+            "_id": 1,
+            "category":"Latest and trending Shows"
+        },
+
+        {
+            "_id": 2,
+            "category":"Popular Shows"
+        },
+
+        {
+            "_id": 3,
+            "category":"Star Jalsha"
+        },
+
+        {
+            "_id": 4,
+            "category":"Star Plus"
+        },
+
+        {
+            "_id": 5,
+            "category":"Star Bhaarat"
+        },
+
+        {
+            "_id": 6,
+            "category":"Star Vijay"
+        }
+    ]
+)

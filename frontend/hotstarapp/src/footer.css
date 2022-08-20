@@ -1,0 +1,75 @@
+.footer {
+    position: relative;
+}
+
+.footer .footer-container {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+    padding: 34px 0 24px;
+}
+
+.footer .footer-container .footer-left ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 10px 0 0;
+}
+
+.footer-left span {
+    color:grey;
+    
+}
+
+.footer-right {
+    height:200px;
+    width:485px;
+}
+
+.social-unit{
+    height:120px;
+    width:150px;
+    margin-left: -17px;
+}
+
+.footer-right .social-unit span{
+    color:grey;
+    font-weight: bold;
+}
+
+.footer-right .app-unit h5{
+    color:grey;
+    font-weight: bold;
+}
+
+.slogo{
+    height:50px;
+    width:50px;
+    background-color: #141b29;
+}
+
+.app-unit{
+    height:120px;
+    width:315px;
+    margin-left: 2px;
+    float:left;
+}
+
+.playstore{
+    height:50px;
+    width: 135px;
+    float:left;
+    background-color: #141b29;
+    margin-left:1px;
+}
+
+.appstore{
+    height:50px;
+    width:50%;
+    float:left;
+    background-color: #141b29;
+    margin-left:1px;
+}

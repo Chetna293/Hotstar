@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <title>Watch latest & trending</title>
+        <link rel="stylesheet" href="home.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="icon" href="https://secure-media.hotstar.com/web-assets/prod/D+H_favicon.ico">
+        <link href="latest.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <script>
+            let day_and_night = 0;
+
+            function changeMode() {
+                if (day_and_night % 2 == 0) {
+                    document.getElementById('changeMode').classList.remove('bi-brightness-high-fill');
+                    document.getElementById('changeMode').classList.add('bi-moon-stars-fill');
+                    document.body.style.backgroundColor = "white";
+                    day_and_night++;
+                } else {
+                    document.getElementById('changeMode').classList.remove('bi-moon-stars-fill');
+                    document.getElementById('changeMode').classList.add('bi-brightness-high-fill');
+                    document.body.style.backgroundColor = "black";
+                    day_and_night--;
+                }
+            }
+        </script>
+        
+        
+        
+    </head>
+    
+    <body>
+        
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                     
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#edunav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="menubtn">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <div id="icon">
+                        <a href="index.html" target="_blank">
+                            <img src="disney-hotstar-logo.png" alt="Disney"/>
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="edunav">
+                        <ul class="nav navbar-nav">
+                            <li>   
+                                <a href="">TV</a>
+                                <ul>
+                                    <li><a href="">Other Shows</a></li>
+                                    <li><a href="">Hotstar Special</a></li>
+                                    <li><a href="">Quix</a></li>
+                                    <li><a href="">Star Jalsha</a></li>
+                                    <li><a href="">Star Plus</a></li>
+                                    <li><a href="">Star Vijay</a></li>
+                                    <li><a href="">Star Bharat</a></li>
+                                    <li><a href="">Asianet</a></li>
+                                    <li><a href="">More...</a></li>
+                                </ul>   
+                            </li>
+                            <li><a href="">Movies</a>
+                                <ul>
+                                    <li><a href="">Hindi</a></li>
+                                    <li><a href="">Telgu</a></li>
+                                    <li><a href="">Malyalam</a></li>
+                                    <li><a href="">Marathi</a></li>
+                                    <li><a href="">Gujarati</a></li>
+                                    <li><a href="">Bangoli</a></li>
+                                    <li><a href="">English</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Sports</a>
+                                <ul>
+                                    <li><a href="">Cricket</a></li>
+                                    <li><a href="">Football</a></li>
+                                    <li><a href="">Formula 1</a></li>
+                                    <li><a href="">Kabaddi</a></li>
+                                    <li><a href="">Hockey</a></li>
+                                    <li><a href="">Formula E</a></li>
+                                    <li><a href="">Khelo India</a></li>
+                                    <li><a href="">Tennis</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Disney+</a></li>
+                        </ul>
+                        <div class="search-container right-element">
+                            <input class type="search" placeholder="Search" id="searchField" autocomplete="off" value >
+                            <div class="searchIcon">
+                                <i class="search-icon"></i>
+                            </div>
+                        </div>
+                        <button type="button" historyparams="[object][object]" class="subscribe-btn right-element">Subscribe</button>
+                        <div class="login">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="">
+                                    LOGIN
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        <div class="day-night" type="button" onClick="changeMode();">
+            <i class="bi bi-brightness-high" id="changeMode"></i>
+        </div>
+        
+        <div class="list">
+            <h3>Latest & Trending</h3>
+            <div class="list-container1">
+                <a href="Show/show.html">
+                    <img src="obi-wan.png" alt="hotstar-special" />
+                </a>
+            </div>
+            <div class="list-container">
+                <img src="escaype.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="thursday.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="2.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="3.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="4.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="5.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="6.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="7.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="8.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="9.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="10.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="11.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="12.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="13.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="14.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="15.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="16.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="17.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="18.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="19.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="20.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="anupamaa2.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="bheeshma.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="homeshanti.png" alt="hotstar-special" />
+            </div>
+            <div class="list-container">
+                <img src="moonnight.png" alt="hotstar-special" />
+            </div>
+
+        </div>
+
+        <!--Footer starts here-->
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-left col-xs-12 col-sm-12 col-sm-7">
+                    <ul>
+                        <li><a href="">About Disney+ Hotstar</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Feedback</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                    <span class="copyright">© 2022 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.</span>
+                </div> 
+                <div class="footer-right col-xs-12 col-sm-12 col-sm-5">
+                    <div class="social-unit col-xs-4">
+                        <div>
+                            <span>Connect with us</span>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="fblogo.png" alt="fb" class="slogo"/>
+                            </a>
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <img src="twitterlogo.png" alt="twitter" class="slogo"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="app-unit col-xs-8">
+                            <h5>Disney+ Hotstar App</h5>
+                            <a href="https://play.google.com/store/apps/details?id=in.startv.hotstar" target="_blank">
+                                <img src="googleplay1.png" alt="playstore" class="playstore"/>
+                            </a>
+                            <a href="https://itunes.apple.com/in/app/hotstar/id934459219?mt=8" target="_blank">
+                                <img src="appstore.png" alt="appstore" class="appstore"/>
+                            </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

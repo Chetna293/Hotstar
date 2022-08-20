@@ -1,0 +1,21 @@
+db.showepisode.insert(
+    [
+        {
+            "episode_id" : 1,
+            "name" : "Padawan (Episode 1)",
+            "description" : "When agents of the Empire pose a new threat, Obi-Wan Kenobi emerges after years of hiding."
+        },
+
+        {
+            "episode_id" : 2,
+            "name" : "Jedi Knight (Episode 2)",
+            "description" : "On a dangerous crime-ridden world, Obi-Wan becomes a target."
+        },
+
+        {
+            "episode_id" : 3,
+            "name" : "Jedi General (Episode 3)",
+            "description" : "Obi-Wan searches for allies as he attracts the attention of the Empire, threatning the locals."
+        }
+    ]
+)

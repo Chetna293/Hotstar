@@ -1,0 +1,38 @@
+db.movies.insert(
+    [
+        {
+            "_id": 1,
+            "language":"Hindi"
+        },
+
+        {
+            "_id": 2,
+            "language":"Telgu"
+        },
+
+        {
+            "_id": 3,
+            "language":"Malyalam"
+        },
+
+        {
+            "_id": 4,
+            "language":"Marathi"
+        },
+
+        {
+            "_id": 5,
+            "language":"Gujarati"
+        },
+
+        {
+            "_id": 6,
+            "language":"Bangoli"
+        },
+
+        {
+            "_id": 7,
+            "language":"English"
+        }
+    ]
+)

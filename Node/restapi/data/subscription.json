@@ -1,0 +1,25 @@
+db.subscription.insert(
+    [
+        {
+            "subscription_id" : 1,
+            "name" : "Super",
+            "price" : "899",
+            "duration" : "1 year"
+        },
+
+        {
+            "subscription_id" : 2,
+            "name" : "Premium",
+            "price" : "1499",
+            "duration" : "1 year"
+        },
+
+        {
+            "subscription_id" : 3,
+            "name" : "Premium",
+            "price" : "299",
+            "duration" : "1 month"
+        }
+    
+    ]
+)
